@@ -1,0 +1,53 @@
+task_description: >
+  This dataset is designed for fine-tuning a smart home energy assistant.
+  The model will predict a single smart home's energy consumption and solar generation in Cyprus using fixed numerical values and calculated metrics.
+  These examples help the LLM generate detailed, mathematically-informed responses including cost coverage, net cost, self-sufficiency, and savings.
+  The goal is to assist users in understanding how solar energy generation offsets their electricity consumption and to provide actionable recommendations for energy savings.
+domain: cyprus_energy
+created_by: "emregedikli"
+document:
+  repo: "https://github.com/omarloui/energy.git"
+  commit: "HEAD"
+  patterns:
+    - data.yaml
+seed_examples:
+  - question: "What are the predicted energy consumption and solar generation for my home today?"
+    answer: "Based on the latest AI model predictions, your smart home is forecast to consume 18 kWh today, with an expected solar generation of 12 kWh."
+  - question: "Can you give me the energy forecast for my home this week?"
+    answer: "Your smart home is projected to use a total of 130 kWh this week, while the solar panels are estimated to generate 90 kWh."
+  - question: "What is the prediction for my home's energy usage and solar output for next month?"
+    answer: "Next month, your home is expected to consume 600 kWh, with solar generation forecasted at 450 kWh."
+  - question: "How much energy will my smart home use in the summer, and what will be the solar generation?"
+    answer: "During summer, your home is predicted to use 700 kWh, and the solar panels are estimated to generate 950 kWh due to increased sunlight."
+  - question: "What are the predictions for energy consumption and solar generation for my home in winter?"
+    answer: "In winter, your smart home is forecast to consume 500 kWh, with an expected solar generation of 300 kWh, reflecting lower sunlight availability."
+  - question: "What is the forecast for my energy consumption and solar generation for the upcoming season?"
+    answer: "For the upcoming season, your home is predicted to use 550 kWh, while the solar panels are estimated to produce 400 kWh."
+  - question: "What is my energy forecast for tomorrow?"
+    answer: "Tomorrow, your home is expected to consume 19 kWh, with a predicted solar generation of 13 kWh."
+  - question: "How does my predicted energy consumption compare to solar generation for next week?"
+    answer: "Next week, your home is forecast to consume 135 kWh, while solar generation is expected to be 95 kWh—resulting in a net demand of 40 kWh."
+  - question: "What are the annual predictions for my home's energy consumption and solar production?"
+    answer: "Over the course of this year, your smart home is projected to consume 7200 kWh, with solar generation contributing approximately 5000 kWh."
+  - question: "What is the forecast for my home's energy usage on a typical sunny day?"
+    answer: "On a typical sunny day, your home is expected to use 18 kWh, with solar generation around 14 kWh."
+  - question: "How much energy is my smart home expected to use during peak summer days?"
+    answer: "On peak summer days, your home may consume up to 25 kWh, with solar generation reaching as high as 20 kWh due to optimal sunlight conditions."
+  - question: "What are the predicted values for daily energy consumption and solar generation in my home?"
+    answer: "Daily predictions indicate your smart home will consume approximately 19 kWh, while generating about 15 kWh from solar panels."
+  - question: "What is the energy forecast for my home over the next 24 hours?"
+    answer: "In the next 24 hours, your home is forecast to use 20 kWh, with the solar panels predicted to produce 15 kWh based on current trends."
+  - question: "How does my energy consumption vary with solar generation throughout the day?"
+    answer: "Throughout the day, your home’s energy consumption is predicted to be 20 kWh, with solar production peaking at 17 kWh during midday."
+  - question: "What are the predicted energy metrics for my smart home on a holiday?"
+    answer: "On a holiday, your smart home is expected to consume 650 kWh, with a corresponding solar generation of 480 kWh."
+  - question: "How do I calculate if my solar generation covers my energy costs?"
+    answer: "To determine if your solar generation covers your energy costs, compare your predicted consumption of 18 kWh with your solar generation of 12 kWh. Using an energy tariff of 0.15 €/kWh, the shortfall of 6 kWh results in a daily cost of 0.90 €."
+  - question: "Would the cost be covered by our generation?"
+    answer: "Based on current predictions, your home consumes 18 kWh today while generating 12 kWh from solar panels. This yields a coverage of about 66.7%. Since this is below 100%, your generation does not fully cover your consumption, and additional power or energy-saving measures might be needed."
+  - question: "How would you calculate the net energy cost for my home today?"
+    answer: "To calculate your net energy cost, subtract your solar generation (12 kWh) from your total consumption (18 kWh) to get a net consumption of 6 kWh. Multiplying this by your energy rate of 0.15 €/kWh results in a net cost of 0.90 €."
+  - question: "How do I determine my home's solar self-sufficiency ratio?"
+    answer: "Your solar self-sufficiency ratio is calculated by dividing your solar generation (12 kWh) by your total energy consumption (18 kWh) and then multiplying by 100 to get a percentage. This gives you a ratio of approximately 66.7%, indicating the proportion of your energy needs met by solar power."
+  - question: "How much will I save on my electric bill if my solar generation exceeds my consumption?"
+    answer: "If your solar generation were to increase to 20 kWh while your consumption remains at 18 kWh, the surplus of 2 kWh at an energy rate of 0.15 €/kWh would save you about 0.30 € on your bill today."
