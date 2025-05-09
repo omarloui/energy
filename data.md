@@ -105,10 +105,4 @@ For a typical 6kW solar panel system in Cyprus:
 
 ---
 
-## Data Pattern Usage Note
 
-In your deployment, actual and predicted energy values will be passed dynamically from your AI model. These seed examples with fixed values serve as a template to fine-tune the language model's response style and formatting.
-
----
-
-You can now save this content as `data.md` in your local directory and reference it in your taxonomy file. Let me know if you need any further modifications or additional details!
